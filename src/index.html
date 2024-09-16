@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Office - Dunder Mifflin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #4a3c2f;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 20px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        color: #4a3c2f;
+        font-size: 3.5em;
+        margin-top: 20px;
+    }
+
+    h2, h3 {
+        color: #555;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 600px;
+        margin: 20px auto;
+    }
+
+    video {
+        display: block;
+        margin: 20px auto;
+        border: 5px solid #555;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel img {
+        width: 300px;
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+
+    .btn-seta {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-seta img {
+        width: 50px;
+    }
+
+    .quotes {
+        font-style: italic;
+        margin: 20px 0;
+        color: #4a3c2f;
+    }
+
+    footer {
+        background-color: #4a3c2f;
+        color: white;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <nav>
+    <a href="./index.html">Dunder Mifflin</a>
+    </nav>
+
+    <h1>Chaos in Scranton</h1>
+
+    <div id="introduction">
+    <h2>Working at Dunder Mifflin</h2>
+    <p>Dunder Mifflin is not your typical office. Between Michael Scott's awkward management style, Dwight Schrute's bizarre behavior, and Jim Halpert's constant pranks, the work environment is chaotic, to say the least. Despite the company's paper-related business, most employees spend their days navigating ridiculous situations, from fire drills to spontaneous office dance-offs. Yet, amidst all the mayhem, the bonds between coworkers create moments of genuine friendship and hilarity.</p>
+    <a href="https://en.wikipedia.org/wiki/The_Office_(American_TV_series)" target="_blank">Learn More</a>
+    </div>
+
+    <div id="office">
+    <h2>Team</h2>
+    <p>Take a look at our super team at Dunder Mifflin!</p>
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/26217341.jpg" alt="The Office">
+    </div>
+
+    <div id="characters">
+    <h2>Main Characters</h2>
+    <div class="carousel">
+        <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img src="./imagens/botão 2.jpeg" alt="seta para voltar a imagem">
+        </button>
+        <img id="character-image" src="./imagens/michael.jpeg" alt="Michael Scott">
+        <button class="btn-seta" id="btn-avancar">
+        <img src="./imagens/botão 1.jpeg" alt="seta para avançar a imagem" />
+        </button>
+    </div>
+    <p id="character-caption">Michael Scott - "World's Best Boss"</p>
+    </div>
+
+    <div id="quotes">
+    <h2>Famous Quotes</h2>
+    <p class="quotes">“I am Beyoncé, always.” - Michael Scott</p>
+    <p class="quotes">“Bears. Beets. Battlestar Galactica.” - Jim Halpert (imitating Dwight)</p>
+    <p class="quotes">“I declare bankruptcy!” - Michael Scott</p>
+    <p class="quotes">“Through concentration, I can raise and lower my cholesterol at will.” - Dwight Schrute</p>
+    <p class="quotes">“I'm not superstitious, but I am a little stitious.” - Michael Scott</p>
+    </div>
+
+    <div id="media">
+    <h2>Media</h2>
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-9-2.gif" alt="The Office Meme">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-21.gif" alt="The Office Meme 2">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-19.gif" alt="The Office Meme 3">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-13.gif" alt="The Office Meme 4">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-25.gif" alt="The Office Meme 5">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-17.gif" alt="The Office Meme 6">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-26.gif" alt="The Office Meme 7">
+    <img src="https://melhoreseusresultados.com.br/wp-content/uploads/2023/05/giphy-23.gif" alt="The Office Meme 8">
+    </div>
+
+    <footer>
+    <p>&copy; 2024 Dunder Mifflin - A Paper Company</p>
+    </footer>
+
+    <script>
+    const characters = [
+        {
+        img: "./imagens/michael.jpeg",
+        caption: "Michael Scott - 'World's Best Boss'"
+        },
+        {
+        img: "./imagens/jim.jpeg",
+        caption: "Jim Halpert - The Prankster"
+        },
+        {
+        img: "./imagens/Dwight Schrute 🎄.jpeg",
+        caption: "Dwight Schrute - Assistant to the Regional Manager"
+        },
+        {
+        img: "./imagens/pam.jpeg",
+        caption: "Pam Beesly - The Receptionist"
+        },
+        {
+        img: "./imagens/Stanley.jpeg",
+        caption: "Stanley Hudson - The Grump"
+        }
+    ];
+
+    let currentCharacter = 0;
+
+    document.getElementById("btn-avancar").addEventListener("click", function () {
+        currentCharacter = (currentCharacter + 1) % characters.length;
+        updateCharacter();
+    });
+
+    document.getElementById("btn-voltar").addEventListener("click", function () {
+        currentCharacter = (currentCharacter - 1 + characters.length) % characters.length;
+        updateCharacter();
+    });
+
+    function updateCharacter() {
+        document.getElementById("character-image").src = characters[currentCharacter].img;
+        document.getElementById("character-caption").innerText = characters[currentCharacter].caption;
+    }
+    </script>
+
+</body>
+
+</html>
